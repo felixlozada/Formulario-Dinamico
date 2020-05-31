@@ -1,0 +1,153 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	background: #FC466B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container{
+	width: 450px;
+	background: #fff;
+	height: auto;
+	margin: 120px auto;
+	overflow: hidden;
+	border-radius: 10px;
+	opacity: .7;
+	transition: .5s;
+}
+
+.container:hover{
+	opacity: 1;
+}
+
+.forms{
+	width: inherit;
+	height: 80%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	transition: .7s;
+}
+
+.container form{
+	flex-shrink: 0;
+	width: inherit;
+	height: inherit;
+	padding: 30px 0;
+}
+
+form h2{
+	text-align: center;
+	margin-bottom: 35px;
+	font-size: 27px;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"]{
+	display: block;
+	width: 80%;
+	background: #eee;
+	padding: 10px 15px;
+	margin: auto;
+	margin-bottom: 20px;
+	border: 2px solid #eee;
+	outline: none;
+	color: #555;
+	font-size: 18px;
+	opacity: 0.65;
+	transition: .5s;
+}
+
+form input:hover{
+	opacity: 1;
+}
+
+form input:focus{
+	background: #f9f9f9;
+	opacity: 1;
+	border-bottom: 2px solid #FC466B;
+}
+
+form .actions{
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+}
+
+form .actions a{
+	display: block;
+	width: 40%;
+	padding: 20px;
+	color: #FC466B;
+	text-align: center;
+}
+
+form .actions a:hover{
+	color: #555;
+}
+
+form input[type="submit"]{
+	background: #333;
+	border: none;
+	outline: none;
+	padding: 15px 20px;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 18px;
+	width: 50%;
+	cursor: pointer;
+	transition: .5s;
+}
+
+form input[type="submit"]:hover{
+	background: #FC466B;
+	color: #fff;
+}
+
+::placeholder{
+	color: #FC466B;
+}
+
+.alerta{
+	display: block;
+	width: 50%;
+	text-align: center;
+	border-radius: 20px;
+	font-size: 18px;
+	padding: 10px 20px;
+	margin: 10px auto 20px;
+	text-transform: uppercase;
+	color: #fff;
+	transition: .7s;
+}
+
+.error{
+	background: #FC466B;
+}
+
+.exito{
+	background: #445df7;
+}
+
+@media screen and (max-width: 500px){
+	.container{
+		width: 250px;
+	}
+
+	form .actions{
+		flex-flow: column-reverse;
+	}
+
+	.actions input[type="submit"], form .actions a{
+		width: 80%;
+	}
+}

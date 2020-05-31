@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de usuarios</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="forms">
+			<form id="registro" action="#">
+				<h2>Registro</h2>
+				<input id="nombre" type="text" placeholder="Nombre">
+				<input id="apellidos" type="text" placeholder="Apellidos">
+				<input id="email1" type="email" placeholder="Email">
+				<input id="password1" type="password" placeholder="Password">
+				<div class="actions">
+					<a href="#" data-id="0">Iniciar sesion</a>
+					<input type="submit" value="Resgistrate">
+				</div>
+			</form>
+			<form id="login" action="#">
+				<h2>Iniciar sesion</h2>
+				<input  id="email2" type="email" placeholder="Email">
+				<input id="password2" type="password" placeholder="Password">
+				<div class="actions">
+					<a href="#" data-id="1">Crear cuenta</a>
+					<input type="submit" value="Iniciar sesion">
+				</div>
+			</form>
+		</div>
+		<p class="alerta"></p>
+	</div>
+
+<script src="main.js"></script>
+</body>
+</html>
